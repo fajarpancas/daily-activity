@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fajarpanca/DailyActivity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
+            "outputFile": "/Users/fajarpanca/daily-activity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
             "map": [
                 {
                     "source": "/Users/fajarpanca/.gradle/caches/transforms-2/files-2.1/73e02b5e928516dcf3ddadeb0d967b06/jetified-firebase-messaging-21.0.0/res/values-or/values.xml",

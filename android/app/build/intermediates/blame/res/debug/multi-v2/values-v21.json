@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fajarpanca/DailyActivity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/fajarpanca/daily-activity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/fajarpanca/.gradle/caches/transforms-2/files-2.1/decc81f297f2d828e587b33917ffcaab/material-1.2.0-alpha03/res/values-v21/values-v21.xml",

@@ -3,8 +3,8 @@ import Scale from '../Transform/Scale';
 
 export function getTopBarStyle(text, color) {
   return {
-    fontFamily: Fonts.type.base,
-    fontSize: Scale(18),
+    fontFamily: Fonts.type.bold,
+    fontSize: Scale(14),
     color,
     text
   };

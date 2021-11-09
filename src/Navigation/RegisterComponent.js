@@ -1,4 +1,3 @@
-import React from 'react';
 import {Navigation} from 'react-native-navigation';
 import App from '../Screens/App';
 import LoginScreen from '../Screens/Auth/LoginScreen';
@@ -12,6 +11,8 @@ import ReduxWrapper from './ReduxWrapper';
 import UnexpectedActivity from '../Screens/Plan/UnexpectedActivity';
 import PlanActivity from '../Screens/Plan/PlanActivity';
 import Plan from '../Screens/Plan';
+import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
+import AddActivity from '../Screens/Plan/AddActivity';
 
 export const NAVIGATION_NAME = {
   APP: 'app',
@@ -25,46 +26,49 @@ export const NAVIGATION_NAME = {
     PLAN: {
       index: 'main.plan.index',
       planActivity: 'main.plan.planActivity',
-      unexpectedActivity: 'main.plan.unexpectedActivity'
+      unexpectedActivity: 'main.plan.unexpectedActivity',
+      addActivity: 'main.plan.addActivity'
     }
   },
   COMPONENTS: {
     modal: 'component.modal',
     alert: 'component.alert',
-    toast: 'component.toast',
+    toast: 'component.toast'
   }
 };
 
+function RegisterComponentWrapper(identity, component, isRoot) {
+  if (identity.includes('overlay')) {
+    Navigation.registerComponent(
+      identity,
+      () => ReduxWrapper(component, isRoot),
+      () => component
+    );
+  } else {
+    Navigation.registerComponent(
+      identity,
+      () => ReduxWrapper(gestureHandlerRootHOC(component), isRoot),
+      () => component
+    );
+  }
+}
 export default function () {
-  Navigation.registerComponent(NAVIGATION_NAME.APP, () => ReduxWrapper(App));
-  Navigation.registerComponent(NAVIGATION_NAME.AUTH.login, () =>
-    ReduxWrapper(LoginScreen)
+  RegisterComponentWrapper(NAVIGATION_NAME.APP, App);
+  RegisterComponentWrapper(NAVIGATION_NAME.AUTH.login, LoginScreen);
+  RegisterComponentWrapper(NAVIGATION_NAME.AUTH.register, RegisterScreen);
+  RegisterComponentWrapper(NAVIGATION_NAME.MAIN.main, MainScreen);
+  RegisterComponentWrapper(NAVIGATION_NAME.MAIN.PLAN.index, Plan);
+  RegisterComponentWrapper(
+    NAVIGATION_NAME.MAIN.PLAN.unexpectedActivity,
+    UnexpectedActivity
   );
-  Navigation.registerComponent(NAVIGATION_NAME.AUTH.register, () =>
-    ReduxWrapper(RegisterScreen)
+  RegisterComponentWrapper(
+    NAVIGATION_NAME.MAIN.PLAN.planActivity,
+    PlanActivity
   );
-  Navigation.registerComponent(NAVIGATION_NAME.MAIN.main, () =>
-    ReduxWrapper(MainScreen)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.index, () =>
-  ReduxWrapper(Plan)
-);
-  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.unexpectedActivity, () =>
-    ReduxWrapper(UnexpectedActivity)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.planActivity, () =>
-    ReduxWrapper(PlanActivity)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.MAIN.setting, () =>
-    ReduxWrapper(SettingScreen)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.COMPONENTS.modal, () =>
-    ReduxWrapper(ModalScreen)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.COMPONENTS.alert, () =>
-    ReduxWrapper(Alert)
-  );
-  Navigation.registerComponent(NAVIGATION_NAME.COMPONENTS.toast, () =>
-    ReduxWrapper(Toast)
-  );
+  RegisterComponentWrapper(NAVIGATION_NAME.MAIN.PLAN.addActivity, AddActivity);
+  RegisterComponentWrapper(NAVIGATION_NAME.MAIN.setting, SettingScreen);
+  RegisterComponentWrapper(NAVIGATION_NAME.COMPONENTS.modal, ModalScreen);
+  RegisterComponentWrapper(NAVIGATION_NAME.COMPONENTS.alert, Alert);
+  RegisterComponentWrapper(NAVIGATION_NAME.COMPONENTS.toast, Toast);
 }

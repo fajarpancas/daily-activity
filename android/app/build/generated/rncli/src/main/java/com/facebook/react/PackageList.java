@@ -19,10 +19,16 @@ import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
 import com.microsoft.appcenter.reactnative.appcenter.AppCenterReactNativePackage;
 // react-native-code-push
 import com.microsoft.codepush.react.CodePush;
+// react-native-date-picker
+import com.henninghall.date_picker.DatePickerPackage;
+// react-native-gesture-handler
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-mmkv-storage
 import com.ammarahmed.mmkv.RNMMKVPackage;
 // react-native-navigation
 import com.reactnativenavigation.react.NavigationPackage;
+// react-native-reanimated
+import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-vector-icons
 import com.oblador.vectoricons.VectorIconsPackage;
 
@@ -74,8 +80,11 @@ public class PackageList {
       new ReactNativeFirebaseMessagingPackage(),
       new AppCenterReactNativePackage(getApplication()),
       new CodePush(getResources().getString(com.dailyact.R.string.CodePushDeploymentKey), getApplicationContext(), com.dailyact.BuildConfig.DEBUG),
+      new DatePickerPackage(),
+      new RNGestureHandlerPackage(),
       new RNMMKVPackage(),
       new NavigationPackage(reactNativeHost),
+      new ReanimatedPackage(),
       new VectorIconsPackage()
     ));
   }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="default_web_client_id" translatable="false">898808355501-69snavapk5eualuh93hhhgpg3rree9r1.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://vsboilerplate.firebaseio.com</string>
+    <string name="firebase_database_url" translatable="false">https://dailyact.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">898808355501</string>
     <string name="google_api_key" translatable="false">AIzaSyBk9JQBUGKOX8jIin6qWO86ouy__8XtvFI</string>
     <string name="google_app_id" translatable="false">1:898808355501:android:37aed9620cbda2f1560424</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBk9JQBUGKOX8jIin6qWO86ouy__8XtvFI</string>
-    <string name="google_storage_bucket" translatable="false">vsboilerplate.appspot.com</string>
-    <string name="project_id" translatable="false">vsboilerplate</string>
+    <string name="google_storage_bucket" translatable="false">dailyact.appspot.com</string>
+    <string name="project_id" translatable="false">dailyact</string>
 </resources>

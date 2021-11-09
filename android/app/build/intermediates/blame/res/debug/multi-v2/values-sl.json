@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fajarpanca/DailyActivity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
+            "outputFile": "/Users/fajarpanca/daily-activity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sl/values-sl.xml",
             "map": [
                 {
                     "source": "/Users/fajarpanca/.gradle/caches/transforms-2/files-2.1/20a181d97ec5602bc008b1ea709e8c66/jetified-play-services-basement-17.1.1/res/values-sl/values.xml",

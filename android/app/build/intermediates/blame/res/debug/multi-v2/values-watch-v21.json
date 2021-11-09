@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/fajarpanca/DailyActivity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "/Users/fajarpanca/daily-activity/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
                     "source": "/Users/fajarpanca/.gradle/caches/transforms-2/files-2.1/e4438a7a993ffba7309ec9d3f5f26614/appcompat-1.1.0/res/values-watch-v21/values-watch-v21.xml",

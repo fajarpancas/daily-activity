@@ -5,6 +5,7 @@ import NavigationServices from './NavigationServices';
 import RegisterComponent, {NAVIGATION_NAME} from './RegisterComponent';
 import DefaultOptions from './Styles/';
 import TempStorage from '../Modules/TempStorage';
+import {Platform} from 'react-native';
 
 RegisterComponent();
 
@@ -16,14 +17,16 @@ RNNavigation.events().registerComponentDidAppearListener((nav) => {
   NavigationServices.setActiveNavigation(nav);
 });
 
-RNNavigation.setDefaultOptions({
-  statusBar: DefaultOptions.statusBar,
-  topBar: DefaultOptions.topBar,
-  bottomTabs: DefaultOptions.bottomTabs,
-  bottomTab: DefaultOptions.bottomTab,
-  layout: DefaultOptions.layout,
-  animations: DefaultOptions.animations
-});
+if (Platform.OS === 'android') {
+  RNNavigation.setDefaultOptions({
+    statusBar: DefaultOptions.statusBar,
+    topBar: DefaultOptions.topBar,
+    bottomTabs: DefaultOptions.bottomTabs,
+    bottomTab: DefaultOptions.bottomTab,
+    layout: DefaultOptions.layout,
+    animations: DefaultOptions.animations
+  });
+}
 
 let hasLaunched = false;
 RNNavigation.events().registerAppLaunchedListener(async () => {

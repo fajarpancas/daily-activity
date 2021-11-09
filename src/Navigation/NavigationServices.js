@@ -1,6 +1,7 @@
 import {Navigation} from 'react-native-navigation';
 import {NAVIGATION_NAME} from './RegisterComponent';
-import {Images} from '../Themes/';
+import {Colors, Fonts, Images} from '../Themes/';
+import Scale from '../Transform/Scale';
 
 /**
  * This services used to help you handle navigation easyly
@@ -47,7 +48,7 @@ function setRootMain() {
         children: [
           {
             stack: {
-              id: 'main',
+              id: 'plan',
               children: [
                 {
                   component: {
@@ -57,15 +58,16 @@ function setRootMain() {
               ],
               options: {
                 bottomTab: {
-                  text: 'Home', // Optional
-                  textColor: 'grey', // Optional
-                  badge: '1', // Optional
-                  badgeColor: 'red', // Optional
-                  icon: Images.icon, // Optional
-                  iconColor: 'grey', // Optional
-                  selectedTextColor: 'white', // Optional
-                  selectedIcon: Images.icon, // Optional
-                  selectedIconColor: 'white' // Optional
+                  text: 'To do List',
+                  icon: Images.icon,
+                  iconColor: 'gray',
+                  selectedIcon: Images.icon,
+                  selectedIconColor: Colors.navy,
+                  selectedTextColor: Colors.navy,
+                  textColor: 'gray',
+                  selectedFontSize: Scale(10),
+                  fontFamily: Fonts.type.base,
+                  fontSize: Scale(10)
                 }
               }
             }
@@ -82,14 +84,32 @@ function setRootMain() {
               ],
               options: {
                 bottomTab: {
-                  text: 'Screen',
-                  icon: Images.icon, // Optional
-                  selectedIcon: Images.icon // Optional
+                  text: 'Laporan',
+                  icon: Images.icon,
+                  iconColor: 'gray',
+                  selectedIcon: Images.icon,
+                  selectedIconColor: Colors.navy,
+                  selectedTextColor: Colors.navy,
+                  textColor: 'gray',
+                  selectedFontSize: Scale(10),
+                  fontFamily: Fonts.type.base,
+                  fontSize: Scale(10)
                 }
               }
             }
           }
         ]
+      }
+    }
+  });
+
+  Navigation.mergeOptions('bottom_tab_main', {
+    bottomTabs: {
+      currentTabIndex: 0
+    },
+    topBar: {
+      backButton: {
+        title: ''
       }
     }
   });
