@@ -1,0 +1,37 @@
+{
+  "name": "react-native-bugsee",
+  "version": "2.3.7",
+  "summary": "Bugsee React Native Module",
+  "description": "Bugsee React Native Module",
+  "homepage": "https://www.bugsee.com",
+  "license": "Commercial",
+  "authors": "Bugsee",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "http": "https://download.bugsee.com/sdk/ios/Bugsee-1.26.2.zip"
+  },
+  "source_files": "ios/bridge/*",
+  "ios": {
+    "vendored_frameworks": "ios/lib/Bugsee.framework"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "AVFoundation",
+    "CoreMedia",
+    "CoreMotion",
+    "SystemConfiguration",
+    "Foundation",
+    "CoreTelephony",
+    "UIKit"
+  ],
+  "preserve_paths": "*",
+  "libraries": "c++",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+module Pods_DailyAct_DailyActTests {
+  umbrella header "Pods-DailyAct-DailyActTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

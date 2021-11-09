@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VsBoilerPlate.iml" filepath="$PROJECT_DIR$/.idea/modules/VsBoilerPlate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VsBoilerPlate.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VsBoilerPlate.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2120043010/VsBoilerPlate.appcenter.iml" filepath="$PROJECT_DIR$/.idea/modules/2120043010/VsBoilerPlate.appcenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-633147944/VsBoilerPlate.react-native-code-push.iml" filepath="$PROJECT_DIR$/.idea/modules/-633147944/VsBoilerPlate.react-native-code-push.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/222990197/VsBoilerPlate.react-native-firebase_app.iml" filepath="$PROJECT_DIR$/.idea/modules/222990197/VsBoilerPlate.react-native-firebase_app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/844214872/VsBoilerPlate.react-native-firebase_messaging.iml" filepath="$PROJECT_DIR$/.idea/modules/844214872/VsBoilerPlate.react-native-firebase_messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/812683181/VsBoilerPlate.react-native-mmkv-storage.iml" filepath="$PROJECT_DIR$/.idea/modules/812683181/VsBoilerPlate.react-native-mmkv-storage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-257260400/VsBoilerPlate.react-native-navigation.iml" filepath="$PROJECT_DIR$/.idea/modules/-257260400/VsBoilerPlate.react-native-navigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/787428612/VsBoilerPlate.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/787428612/VsBoilerPlate.react-native-vector-icons.iml" />
+    </modules>
+  </component>
+</project>

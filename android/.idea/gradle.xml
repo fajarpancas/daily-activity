@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="PLATFORM" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/../node_modules/@react-native-firebase/app/android" />
+            <option value="$PROJECT_DIR$/../node_modules/@react-native-firebase/messaging/android" />
+            <option value="$PROJECT_DIR$/../node_modules/appcenter/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-code-push/android/app" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-mmkv-storage/android" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-navigation/lib/android/app" />
+            <option value="$PROJECT_DIR$/../node_modules/react-native-vector-icons/android" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
