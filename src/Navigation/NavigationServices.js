@@ -51,7 +51,7 @@ function setRootMain() {
               children: [
                 {
                   component: {
-                    name: NAVIGATION_NAME.MAIN.main
+                    name: NAVIGATION_NAME.MAIN.PLAN.index
                   }
                 }
               ],
@@ -61,21 +61,11 @@ function setRootMain() {
                   textColor: 'grey', // Optional
                   badge: '1', // Optional
                   badgeColor: 'red', // Optional
-                  // animateBadge: true, // Optional, Android only
-                  // disableIconTint: true, // Optional
-                  // dotIndicator: {color: 'red', size: 11, visible: true, animate: true}, // Optional
-                  // fontFamily: '', // Optional
-                  // fontSize: 17, // Optional
                   icon: Images.icon, // Optional
                   iconColor: 'grey', // Optional
-                  // selectedFontSize: 21, // Optional
                   selectedTextColor: 'white', // Optional
                   selectedIcon: Images.icon, // Optional
                   selectedIconColor: 'white' // Optional
-                  // iconInsets: {top: 0, left: 0, right: 0, bottom: 0}, // Optional
-                  // disableSelectedIconTint: false, // Optional, Android only
-                  // disableIconTint: false, // Optional, Android only
-                  // testID: 'test', // Optional
                 }
               }
             }

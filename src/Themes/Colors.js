@@ -1,5 +1,6 @@
 const Colors = {
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  navy: '#2D72CB'
 };
 
 export default Colors;

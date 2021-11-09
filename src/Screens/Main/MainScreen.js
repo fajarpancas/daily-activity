@@ -6,7 +6,6 @@ import ApplicationStyles from '../../Themes/ApplicationStyles';
 
 class MainScreen extends PureComponent {
   render() {
-    const {reset} = this.props;
     return (
       <View style={ApplicationStyles.containerCenter}>
         <Text> Main Screen </Text>
@@ -21,7 +20,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    reset: () => dispatch(SampleActions.reset())
   };
 };
 

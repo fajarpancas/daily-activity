@@ -9,6 +9,9 @@ import ModalScreen from '../Screens/Main/ModalScreen';
 import Alert from '../Components/Alert';
 import Toast from '../Components/Toast';
 import ReduxWrapper from './ReduxWrapper';
+import UnexpectedActivity from '../Screens/Plan/UnexpectedActivity';
+import PlanActivity from '../Screens/Plan/PlanActivity';
+import Plan from '../Screens/Plan';
 
 export const NAVIGATION_NAME = {
   APP: 'app',
@@ -19,6 +22,11 @@ export const NAVIGATION_NAME = {
   MAIN: {
     main: 'main.main',
     setting: 'main.setting',
+    PLAN: {
+      index: 'main.plan.index',
+      planActivity: 'main.plan.planActivity',
+      unexpectedActivity: 'main.plan.unexpectedActivity'
+    }
   },
   COMPONENTS: {
     modal: 'component.modal',
@@ -37,6 +45,15 @@ export default function () {
   );
   Navigation.registerComponent(NAVIGATION_NAME.MAIN.main, () =>
     ReduxWrapper(MainScreen)
+  );
+  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.index, () =>
+  ReduxWrapper(Plan)
+);
+  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.unexpectedActivity, () =>
+    ReduxWrapper(UnexpectedActivity)
+  );
+  Navigation.registerComponent(NAVIGATION_NAME.MAIN.PLAN.planActivity, () =>
+    ReduxWrapper(PlanActivity)
   );
   Navigation.registerComponent(NAVIGATION_NAME.MAIN.setting, () =>
     ReduxWrapper(SettingScreen)
